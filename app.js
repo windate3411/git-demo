@@ -14,6 +14,9 @@ db.once('open', () => {
   console.log("MongoDB connected");
 })
 
+//載入model
+const Todo = require('./models/todo')
+
 app.get('/', (req, res) => {
   res.send('Hello world!')
 })
